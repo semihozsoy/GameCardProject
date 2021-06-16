@@ -11,7 +11,7 @@ final class PlatformsView: NibView{
     @IBOutlet weak var platformsLabel: UILabel!
     
     public func configure(title:String,
-                    titleColor:UIColor = .white,
+                    titleColor:UIColor = .black,
                     titleFont:UIFont = .regular(10)) {
          platformsLabel.text = title
         

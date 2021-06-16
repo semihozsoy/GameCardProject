@@ -31,6 +31,7 @@ class GameListCollectionViewCell: UICollectionViewCell {
         configureCellSize()
         configureFontsandColor()
         configureButton()
+    
     }
     
     func configureCell(game: Result){
@@ -49,8 +50,10 @@ class GameListCollectionViewCell: UICollectionViewCell {
     func platformConfigure(parentPlatforms: [ParentPlatform]){
         var tempLabel = ""
         for platform in parentPlatforms {
-            tempLabel.append("\(platform.platform?.name) ")
+            tempLabel.append("\(platform.platform?.name ?? "")" )
+            
         }
+        
         self.platformView.configure(title: tempLabel)
         platformView.layer.cornerRadius = 4
         platformView.layer.masksToBounds = true
@@ -92,6 +95,7 @@ class GameListCollectionViewCell: UICollectionViewCell {
         guard let genresDict = genresArray?.joined(separator: ", ") else { return }
         infoCells.append(["Genres: ":genresDict])
         generesLabel.text = "Genres:\(genresDict)"
+       
         
     }
  

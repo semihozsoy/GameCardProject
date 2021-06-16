@@ -10,23 +10,23 @@ import UIKit
 
 // MARK: - Results
 struct PlatformResults: Decodable {
-    let count: Int
+    let count: Int?
     let next, previous: String?
-    let results: [PlatformResult]
+    let results: [PlatformResult]?
 }
 
 // MARK: - Result
 struct PlatformResult: Decodable {
-    let id: Int
-    let name, slug: String
+    let id: Int?
+    let name, slug: String?
     let platforms: [PlatformforPlatform]?
 }
 
 // MARK: - Platform
 struct PlatformforPlatform: Decodable {
-    let id: Int
-    let name, slug: String
-    let gamesCount: Int
+    let id: Int?
+    let name, slug: String?
+    let gamesCount: Int?
     let imageBackground: String?
     let image: String?
     let yearStart: Int?
