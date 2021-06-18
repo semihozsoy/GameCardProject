@@ -24,4 +24,5 @@ class NibView: UIView {
             contentView.frame = self.bounds
         }
     }
+  
 }

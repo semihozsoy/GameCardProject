@@ -139,8 +139,6 @@ extension GameListViewController:UICollectionViewDelegate,UICollectionViewDataSo
             if let platforms = platformResult?[indexPath.row]{
                 cell.configureCell(platform: platforms)
             }
-        
-           
             return cell
         }
         else {

@@ -102,8 +102,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tp1-Dm-qZ8" customClass="PlatformsView" customModule="FinalProject" customModuleProvider="target">
-                                                <rect key="frame" x="63" y="17" width="43" height="18"/>
+                                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tp1-Dm-qZ8" customClass="PlatformsView" customModule="FinalProject">
+                                                <rect key="frame" x="14" y="40" width="43" height="18"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </view>
                                         </subviews>
@@ -152,7 +152,7 @@
                 <outlet property="imageViewContainer" destination="TOJ-8b-87b" id="aen-kr-M7x"/>
                 <outlet property="mainStackView" destination="vk3-sz-ZXB" id="0Uq-dA-n9g"/>
                 <outlet property="platformLabel" destination="7SA-ik-IGJ" id="h9X-Cx-AGo"/>
-                <outlet property="platformView" destination="Tp1-Dm-qZ8" id="oB4-rx-a2E"/>
+                <outlet property="platformView" destination="Tp1-Dm-qZ8" id="XU5-EF-v9w"/>
                 <outlet property="playTimeLabel" destination="uLS-jT-XQf" id="dcm-Cb-ah5"/>
                 <outlet property="ratingLabel" destination="u5S-oz-ieF" id="95g-is-0Bi"/>
                 <outlet property="releaseDateLabel" destination="Xn6-Jn-9s4" id="mry-dU-XC1"/>

@@ -31,7 +31,6 @@ class GameListCollectionViewCell: UICollectionViewCell {
         configureCellSize()
         configureFontsandColor()
         configureButton()
-    
     }
     
     func configureCell(game: Result){
@@ -51,16 +50,16 @@ class GameListCollectionViewCell: UICollectionViewCell {
         var tempLabel = ""
         for platform in parentPlatforms {
             tempLabel.append("\(platform.platform?.name ?? "")" )
-            
+            let platform = PlatformsView(title: tempLabel)
+            self.platformView.addSubview(platform)
         }
-        
-        self.platformView.configure(title: tempLabel)
+ 
         platformView.layer.cornerRadius = 4
         platformView.layer.masksToBounds = true
         platformView.backgroundColor = UIColor(hex: "454545")
         self.platformLabel.text = tempLabel
     }
-
+    
     func configureFontsandColor(){
         gameNameLabel.font = .medium(20)
         releaseDateLabel.font = .regular(10)
@@ -95,10 +94,8 @@ class GameListCollectionViewCell: UICollectionViewCell {
         guard let genresDict = genresArray?.joined(separator: ", ") else { return }
         infoCells.append(["Genres: ":genresDict])
         generesLabel.text = "Genres:\(genresDict)"
-       
-        
     }
- 
+    
     private func prepareGameImage(with urlString: String?){
         if let  imageUrlString = urlString, let url = URL(string: imageUrlString){
             gameImageView.sd_setImage(with: url)
@@ -106,11 +103,11 @@ class GameListCollectionViewCell: UICollectionViewCell {
     }
     
     func configureCellSize(){
-     
+        
         gameListView.layer.cornerRadius = 16
         gameListView.layer.masksToBounds = true
         gameListView.layer.borderWidth = 1
         
     }
-  
+    
 }
