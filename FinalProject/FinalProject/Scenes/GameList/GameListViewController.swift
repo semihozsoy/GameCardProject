@@ -26,6 +26,7 @@ class GameListViewController: UIViewController {
         fetchPlatform()
         prepareSearchController()
         prepareNavigationBarUI()
+        
     }
     
     func prepareGameCollectionView(){
